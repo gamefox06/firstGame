@@ -1,5 +1,18 @@
+import javax.swing.JFrame;
+
 public class Main {
     public static void main(String[] args) {
-        //first test for github
+
+        JFrame window = new JFrame();
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        window.setResizable(false);
+        window.setTitle("myGameV0.0.1a");
+
+        GamePanel gamePanel = new GamePanel();
+        window.add(gamePanel);
+        window.pack();
+
+        window.setLocationRelativeTo(null);
+        window.setVisible(true);
     }
 }
